@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    line-height: 1.5;
+    padding: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.headerabout h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.footer h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.footer p{
+    font-family: 'Work Sans', sans-serif;
+    color: #778390;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.headerabout p{
+    font-family: 'Work Sans', sans-serif;
+    color: #778390;
+    font-weight: normal;
+    font-size: 16px;
+    flex: 0 0 200px;
+    align-self: start;
+    line-height: 27px;
+}
+
+.headerabout ul {
+    font-family: 'Work Sans', sans-serif;
+    color: #778390;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.funfacts h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.funfacts {
+    max-width: 500px;
+    margin: 0px auto;
+    font-family: 'Work Sans', sans-serif;
+    color: #778390;
+    font-weight: normal;
+    line-height: 27px;
+    font-size: 16px;
+    margin-top: 90px;
+}
+
+.fundots {
+    list-style-type: circle;
+}
+
+.header p{
+    font-family: 'Quattrocento', serif;
+    color: #8d98a1;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header {
+    min-height:400px;
+}
+
+.headerabout {
+    min-height:400px;
+    img, .aboutme {
+        flex: 1 0 50%;
+        }
+    .aboutme { 
+        margin-left: 20px;
+    }
+}
+
+.header img {
+    max-width: 400px;
+}
+
+.headerabout img {
+    max-width: 400px;
+}
+
+.header .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    article {
+        margin-top: 250px;
+    }
+}
+
+
+.footer .container {
+    align-items: center;
+    justify-content: center;
+    margin-top: 165px;
+    margin-bottom: 20px;
+    max-width: 850px;
+}
+
+
+.headerabout .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 190px;
+    
+}
+
+
+.box {
+    flex: 40%;
+    margin: 2%;
+
+}
+ 
+ @media(max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .box .container {
+        display: block;
+        ;
+    }
+    
+ }
+
+ .button {
+    font-family: 'Work Sans', sans-serif;
+    font-style: bold;
+    background-color: white;
+    border: 1px solid #00000033;
+    color: black;
+    padding: 6px 18px;
+    letter-spacing: .5px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 45px;
+  }
+   
+  .button:hover {
+    border-color: black;
+  }
+   
+  .button1 {
+    border-radius: 18px;
+  }
+   
+  .button2 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 5px;
+   
+  }
+   
+   
+  a:link {
+    font-size: 12px;
+    font-style: bold;
+    color: darkgrey;
+    background-color: transparent;
+    text-decoration: none;
+  }
+   
+  a:visited{
+      color: black;
+      background-color: transparent;
+      text-decoration: none;
+  }
+
+  .box {
+	position: relative;
+	width: auto;
+    height: auto;
+}
+
+.image__img {
+	display: block;
+	width: 100%;
+}
+
+.image__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	font-family: 'Work Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay:hover {
+	opacity: 1;
+}
+
+
+.image__title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.image__description {
+	font-size: 18px;
+	margin-top: 0.25em;
+    font-weight: normal;
+}
+
+
+.navbar {
+    background-image: url("img/customertext.PNG");
+    height: 650px;
+    margin-bottom: 100px;
+    margin-left: -40px;
+    margin-right: -40px;
+    background-size: cover;
+}
+
+.navbar2 {
+    background-image: url("img/headerdesign.png");
+    height: 650px;
+    margin-bottom: 100px;
+    margin-left: -40px;
+    margin-right: -40px;
+    background-size: cover;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 400px;
+}
+
+.navbar2 .container {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    margin-bottom: 400px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar2 ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar2 ul li {
+    margin-left: 20px;
+}
+
+
+.row h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 24px;
+    color: black;
+}
+
+.row p {
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 21px;
+}
+
+.row ul {
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 21px;
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.hingwa {
+    align-items: center;
+}
+
+.row {
+    max-width: 600px;
+    align-items: center;
+    margin: 100px auto !important; 
+}
+
+
+.row.top {
+    max-width: 1200px;
+
+}
+
+.breakimg {
+    max-width: 2000px;
+}
